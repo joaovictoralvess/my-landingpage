@@ -1,0 +1,289 @@
+* {
+    background-color: #1E1E1E;
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+  
+  #container-principal{
+    text-align: center;
+  }
+  
+  .nome-principal {
+    text-align: center;
+    margin-top: 1.9em;
+    margin-bottom: 0.4em;
+    color: #ffffff;
+    font-size: 6.2em;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: -10px 0px 10px black;
+  }
+  
+  .descricao-principal {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #ffffff;
+    font-family: monospace;
+    text-shadow: -5px 0px 5px black;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .descricao-principal::after {
+    content: '|';
+    margin-left: -2px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  
+  }
+  
+  #sobre-mim {
+    background-color: #191919;
+    border-radius: 38px;
+    font-size: 3.2em;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 100px 15px 100px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: -5px 0px 5px black;
+    transition: 0.5s ease;
+  
+  }
+  
+  #sobre-mim:hover {
+    font-size: 3.3em;
+    transition: 0.5s all;
+    background-color: #000;
+  }
+  
+  .imagem-tresporquatro {
+    margin-top: 100px;
+    margin-right: 175px;
+    width: 300px;
+    height: 300px;
+    background: url(./assets/imgs/3X4.jpeg) lightgray 50% / cover no-repeat;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 25px 0px #000000;
+    border-radius: 50%;
+  }
+  
+  #container-sobremim {
+    margin-top: 250px;
+    padding-left: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sobremim-titulo {
+    color: #ffffff;
+    text-shadow: -5px 0px 5px black;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 38px;
+  }
+  
+  .sobremim-texto {
+    color: #ffffff;
+    text-shadow: -5px -5px 25px 0px #000;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  #baixar-cv {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 15px;
+  }
+  
+  .downloading {
+    align-items: center;
+    width: 50px;
+  }
+  
+  .btn-cv {
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 3px solid rgb(96, 96, 96);
+    margin-left: -5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 1s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .btn-cv:hover {
+    transition: 2s ease;
+    color: rgb(96, 96, 96);
+    border: 3px solid rgb(96, 96, 96);
+    font-size: 25px;
+  }
+  
+  .titulo-techab {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: -5px 0px 10px #000;
+  }
+  
+  .principal-icons {
+    margin-top: 100px;
+    padding-left: 80px;
+    width: 100px;
+    color:white;
+  }
+  
+  .btn-contatos {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 85px;
+    gap: 20px;
+    font-family: 'Poppins' sans-serif;
+  }
+  
+  .btn-github {
+    text-decoration: none;
+    color: #ffffff;
+    border: 3px solid rgb(96, 96, 96);
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+  }
+  
+  .btn-linkedin {
+    text-decoration: none;
+    color: #ffffff;
+    border: 3px solid rgb(96, 96, 96);
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+  }
+  
+  .btn-whatsapp {
+    text-decoration: none;
+    color: #ffffff;
+    border: 3px solid rgb(96, 96, 96);
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+  }
+  
+  footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    background-color: #000000;  ;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 10vh;
+    padding-top: 35px;
+    margin-top: 200px;
+  }
+  
+  @media (max-width: 1200px) {
+    .nome-principal {
+      font-size: 3rem ;
+    }
+  
+    #sobre-mim {
+      font-size: 2.0em;
+      padding: 20px;
+    }
+  
+    .descricao-principal {
+      font-size: 15px;
+    }
+  
+    #container-sobremim {
+      margin-top: 0px;
+      padding: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .sobremim-titulo {
+      max-width: 500px;
+      font-size: 30px;
+    }
+  
+    .sobremim-texto {
+      width: 100%;
+      font-size: 100%;
+    }
+  
+    .imagem-tresporquatro {
+      width: 200px;
+      height: 200px;
+      margin-right: 0px;
+    }
+  
+    .btn-contatos {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-right: 85px;
+      margin-left: 85px;
+      gap: 20px;
+      font-family: 'Poppins' sans-serif;
+    }
+  
+    .btn-github {
+      text-decoration: none;
+      color: #ffffff;
+      border: 3px solid rgb(96, 96, 96);
+      padding: 20px 30px 20px 30px;
+      border-radius: 20px;
+    }
+    
+    .btn-linkedin {
+      text-decoration: none;
+      color: #ffffff;
+      border: 3px solid rgb(96, 96, 96);
+      padding: 20px 30px 20px 30px;
+      border-radius: 20px;
+    }
+    
+    .btn-whatsapp {
+      text-decoration: none;
+      color: #ffffff;
+      border: 3px solid rgb(96, 96, 96);
+      padding: 20px 40px 20px 40px;
+      border-radius: 20px;
+    }
+  
+    .titulo-techab {
+      font-size: 26px;
+    }
+  
+    .principal-icons {
+      width: 80px;
+    }
+  
+    footer {
+      height: 7.5vh;
+      width: 100%;
+      font-size: 20px;
+    }
+    
+  }
