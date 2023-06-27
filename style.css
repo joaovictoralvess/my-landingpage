@@ -58,7 +58,7 @@ html {
     font-family: 'Poppins', sans-serif;
     text-shadow: -5px 0px 5px black;
     transition: 0.5s ease;
-  
+    white-space: nowrap;
   }
   
   #sobre-mim:hover {
@@ -89,6 +89,7 @@ html {
     color: #ffffff;
     text-shadow: -5px 0px 5px black;
     font-size: 50px;
+    white-space: nowrap;
     font-family: 'Poppins', sans-serif;
     margin-top: 80px;
     margin-bottom: 30px;
@@ -133,7 +134,7 @@ html {
   }
   
   .btn-cv:hover {
-    transition: 2s ease;
+    transition: 1s ease;
     color: rgb(96, 96, 96);
     border: 3px solid rgb(96, 96, 96);
     font-size: 25px;
@@ -147,12 +148,16 @@ html {
     font-family: 'Poppins', sans-serif;
     text-shadow: -5px 0px 10px #000;
   }
+
+  .all-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
   
   .principal-icons {
     margin-top: 100px;
-    padding-left: 80px;
-    width: 100px;
-    color:white;
+    width: 80px;
   }
   
   .btn-contatos {
@@ -223,7 +228,7 @@ html {
     }
   
     .sobremim-titulo {
-      max-width: 500px;
+      max-width: 100%;
       font-size: 30px;
     }
   
@@ -273,11 +278,8 @@ html {
     }
   
     .titulo-techab {
-      font-size: 26px;
-    }
-  
-    .principal-icons {
-      width: 80px;
+      font-size: 20px;
+      white-space: nowrap;
     }
   
     footer {
