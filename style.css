@@ -151,6 +151,7 @@ html {
 
   .all-icons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
   }
@@ -280,6 +281,10 @@ html {
     .titulo-techab {
       font-size: 20px;
       white-space: nowrap;
+    }
+
+    .sobremim-titulo {
+      width: 250px;
     }
   
     footer {
